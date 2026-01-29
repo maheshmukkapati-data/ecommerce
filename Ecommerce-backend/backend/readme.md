@@ -17,13 +17,14 @@ Passlib (bcrypt)
 Postman (Testing)
 
 HOW TO RUN (FROM SCRATCH)
-git clone <repo-url>
-cd ecommerce-backend
 
 
+cd Ecommerce-backend
+
+python -m venv venv
 
 venv\Scripts\activate
-
+cd backend
 pip install -r requirements.txt
 cd backend
 
@@ -41,7 +42,3 @@ JWT Token based
 Header format:
 
 Authorization: Bearer <access_token>
-
-
-
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
