@@ -1,0 +1,117 @@
+/* ===== PAGE ===== */
+.home-container {
+  padding: 20px 40px;
+  background: #f9fafb;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===== HEADER ===== */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.home-container .home-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  background-color: transparent;
+  margin: 0;
+}
+
+
+/* ===== CART ===== */
+.cart-icon {
+  cursor: pointer;
+  position: relative;
+  font-size: 22px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #ef4444;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ===== AUTH BUTTONS ===== */
+.auth-buttons {
+  margin-bottom: 25px;
+}
+
+.auth-buttons button {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.auth-buttons button:hover {
+  background: #1f2937;
+}
+
+/* ===== PRODUCT GRID ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ===== PRODUCT CARD ===== */
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.product-price {
+  color: #10b981;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ===== BUTTON ===== */
+.add-cart-btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-cart-btn:hover {
+  background: #1d4ed8;
+}

@@ -1,0 +1,112 @@
+/* ===== GLOBAL RESET & THEME ===== */
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --bg-main: #f9fafb;
+  --bg-card: #ffffff;
+  --border-light: #e5e7eb;
+  --radius: 10px;
+
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color: var(--text-dark);
+  background-color: var(--bg-main);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-main);
+}
+
+/* ===== LINKS ===== */
+a {
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  border-radius: var(--radius);
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+/* ===== CARDS / CONTAINERS ===== */
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== LIGHT MODE OVERRIDE (DEFAULT) ===== */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--text-dark);
+    background-color: var(--bg-main);
+  }
+}
+
+/* ===== DARK MODE ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-main: #0f172a;
+    --bg-card: #020617;
+    --text-dark: #e5e7eb;
+    --text-light: #9ca3af;
+    --border-light: #1e293b;
+  }
+
+  body {
+    background: var(--bg-main);
+  }
+
+  button {
+    background-color: #1e40af;
+  }
+
+  button:hover {
+    background-color: #1d4ed8;
+  }
+}
