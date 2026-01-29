@@ -122,7 +122,7 @@ const updateProduct = async (id) => {
       ) : (
         <>
           <span className="product-name">{p.name}</span>
-          <span className="product-price">₹{p.price}</span>
+          <span className="product-price">${p.price}</span>
 
           <button onClick={() => startEdit(p)}>Edit</button>
           <button onClick={() => deleteProduct(p.id)}>Delete</button>
