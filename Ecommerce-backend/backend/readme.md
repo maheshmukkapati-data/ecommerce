@@ -25,6 +25,8 @@ cd ecommerce-backend
 venv\Scripts\activate
 
 pip install -r requirements.txt
+cd backend
+
 uvicorn app.main:app --reload
 
 
@@ -39,3 +41,7 @@ JWT Token based
 Header format:
 
 Authorization: Bearer <access_token>
+
+
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
