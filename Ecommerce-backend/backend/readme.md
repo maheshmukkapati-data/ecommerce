@@ -17,15 +17,15 @@ Passlib (bcrypt)
 Postman (Testing)
 
 HOW TO RUN (FROM SCRATCH)
-git clone <repo-url>
+
+
 cd Ecommerce-backend
 
-
+python -m venv venv
 
 venv\Scripts\activate
-
-pip install -r requirements.txt
 cd backend
+pip install -r requirements.txt
 uvicorn app.main:app --reload
 
 
