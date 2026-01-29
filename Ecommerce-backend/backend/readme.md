@@ -18,13 +18,14 @@ Postman (Testing)
 
 HOW TO RUN (FROM SCRATCH)
 git clone <repo-url>
-cd ecommerce-backend
+cd Ecommerce-backend
 
 
 
 venv\Scripts\activate
 
 pip install -r requirements.txt
+cd backend
 uvicorn app.main:app --reload
 
 
